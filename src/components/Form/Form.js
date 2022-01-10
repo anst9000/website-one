@@ -2,7 +2,7 @@ import "./Form.css";
 
 export const Form = () => {
   return (
-    <form action="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true">
       <label htmlFor="name">Your Name</label>
       <input type='text' name="name" id="name" placeholder="Name"></input>
 
@@ -16,7 +16,7 @@ export const Form = () => {
       <textarea rows='6' name="message" id="message" placeholder='Type a short message here' />
 
       <div data-netlify-recaptcha="true"></div>
-      <input className='btn' type="submit" value="Submit" />
+      <button className='btn' type="submit">Submit</button>
     </form>
   )
 }
