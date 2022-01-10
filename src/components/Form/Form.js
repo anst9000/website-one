@@ -1,24 +1,31 @@
 import "./Form.css";
+import { NetlifyForm, Honeypot } from 'react-netlify-forms'
 
 export const Form = () => {
   return (
-    <form name="contact" method="POST" netlify>
-      <input type="hidden" name="form-name" value="pizzaOrder" />
+    <form method='POST' action="/" name='contactform' className='contactForm'>
+      <div className="form-field">
+        <input type='hidden' name='form-name' value='contactForm' />
+      </div>
 
-      <label htmlFor="name">Your Name</label>
-      <input type='text' name="name" id="name" placeholder="Name"></input>
+      <div className="form-field">
+        <label htmlFor="name" />
+        <input type='text' name='name' placeholder='Enter your name' />
+      </div>
 
-      <label htmlFor="email">Email</label>
-      <input type='email' name="email" id="email" placeholder="Email"></input>
+      <div className="form-field">
+        <label htmlFor="email" />
+        <input type='email' name='email' placeholder='Enter your email' />
+      </div>
 
-      <label htmlFor="subject">Subject</label>
-      <input type='text' name="subject" id="subject" placeholder="Subject"></input>
+      <div className="form-field">
+        <label htmlFor="message" />
+        <textarea name='message' placeholder='Type your message here...'></textarea>
+      </div>
 
-      <label htmlFor="message">Details</label>
-      <textarea rows='6' name="message" id="message" placeholder='Type a short message here' />
-
-      <div data-netlify-recaptcha="true"></div>
-      <button className='btn' type="submit">Submit</button>
+      <div className="form-field">
+        <button className="btn" type='submit'>Submit</button>
+      </div>
     </form>
   )
 }

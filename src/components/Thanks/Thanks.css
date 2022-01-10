@@ -1,0 +1,16 @@
+/* STYLES FOR COMPONENT Thanks */
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 40vh;
+}
+
+.thanks h2 {
+  font-size: 3.75rem;
+  color: #ffffff;
+}
+
+.thanks p {
+  font-size: 1.25rem;
+}

@@ -3,7 +3,7 @@ label {
   color: #eee;
 }
 
-form {
+.form-field {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -11,11 +11,11 @@ form {
   max-width: 600px;
 }
 
-form label {
+.form-field label {
   margin-bottom: .5rem;
 }
 
-form input, textarea {
+.form-field input, textarea {
   margin-bottom: 1rem;
   padding: 10px 18px;
   font-size: 1.2rem;

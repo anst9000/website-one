@@ -5,3 +5,4 @@ export * from "./Form";
 export * from "./HeroImage";
 export * from "./Pricing";
 export * from "./Training";
+export * from "./Thanks";
