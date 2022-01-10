@@ -3,7 +3,7 @@ import { NetlifyForm, Honeypot } from 'react-netlify-forms'
 
 export const Form = () => {
   return (
-    <form method='POST' action="/" name='contactform' className='contactForm'>
+    <form method='POST' action="/thanks" name='contactform' className='contactForm'>
       <div className="form-field">
         <input type='hidden' name='form-name' value='contactForm' />
       </div>
