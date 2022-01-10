@@ -2,7 +2,9 @@ import "./Form.css";
 
 export const Form = () => {
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" netlify>
+      <input type="hidden" name="form-name" value="pizzaOrder" />
+
       <label htmlFor="name">Your Name</label>
       <input type='text' name="name" id="name" placeholder="Name"></input>
 
